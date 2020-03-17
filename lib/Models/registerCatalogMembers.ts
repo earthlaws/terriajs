@@ -29,6 +29,8 @@ import StubCatalogItem from "./StubCatalogItem";
 import UrlReference, { UrlToCatalogMemberMapping } from "./UrlReference";
 import WebMapServiceCatalogGroup from "./WebMapServiceCatalogGroup";
 import WebMapServiceCatalogItem from "./WebMapServiceCatalogItem";
+import MapboxVectorTileCatalogItem from "./MapboxVectorTileCatalogItem";
+import UrlReference from "./UrlReference";
 import WebProcessingServiceCatalogFunction from "./WebProcessingServiceCatalogFunction";
 import WebProcessingServiceCatalogItem from "./WebProcessingServiceCatalogItem";
 
@@ -85,6 +87,10 @@ export default function registerCatalogMembers() {
   );
   CatalogMemberFactory.register(MagdaReference.type, MagdaReference);
   CatalogMemberFactory.register(KmlCatalogItem.type, KmlCatalogItem);
+  CatalogMemberFactory.register(
+    MapboxVectorTileCatalogItem.type,
+    MapboxVectorTileCatalogItem
+  );
   CatalogMemberFactory.register(CartoMapCatalogItem.type, CartoMapCatalogItem);
   CatalogMemberFactory.register(UrlReference.type, UrlReference);
   CatalogMemberFactory.register(SplitItemReference.type, SplitItemReference);
