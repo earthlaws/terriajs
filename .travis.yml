@@ -30,5 +30,5 @@ matrix:
       - http POST "https://api.github.com/repos/${TRAVIS_REPO_SLUG}/statuses/${TRAVIS_COMMIT}" "Authorization:token ${GITHUB_TOKEN}" state=failure context=deployment "target_url=${TRAVIS_JOB_WEB_URL}"
     env:
     - NODE_OPTIONS=--max_old_space_size=4096
-    - secure: YHBdXJwydremwVc01QBBwFABxIjgv3IE3wcD7BJKHnLLSBna+j+96B9U6qTvNE7voO21+w5vCb2L0L0ctJqK0P4OBOHx3MVgnxKEKzXX4tYqSiA1CpQ7oYtzFHZ1SrCNKq/Y6DReCUP9MHfo9eygsXYHP8CDBVzgMF50CmJc1dY=
+    - secure: YSuJzfGTwXSUq0liAMsC5yqg6yukPHnFKKCC3/sOeh8UqdCPrS2S37lyg8niA3dNEY+VAa+iYdjRQDUDsAQhQ+FBe7Um4Cz8NEB4t8KjiYiHu+SaRDyubGl4lQRr8n7mrlQ6Xp/lqJZbHdKvYeJMKtSev49/bImq4lHm23vRwro=
     
